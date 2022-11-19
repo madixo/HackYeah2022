@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask m_WhatIsGround;
     public ParticleSystem hitEffect;
     public Animator animator;
+    public HitCollider hitPrefab;
 
     public float velocityMultipler;
     public float attackDistanceHorizontal;
@@ -21,6 +22,14 @@ public class PlayerController : MonoBehaviour
     private float horizontalMovement;
     private bool jump;
     private bool mainAttack;
+    bool mainAttackAnim;
+
+    [HideInInspector]
+    public bool animAttacktToRecord;
+    [HideInInspector]
+    public Vector3 animVectorToRecord;
+    [HideInInspector]
+    public Quaternion animRotToRecord;
 
     private bool right;
 
@@ -29,6 +38,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        mainAttackAnim = false;
     }
 
     void Update()
@@ -40,15 +50,18 @@ public class PlayerController : MonoBehaviour
         {
             jump = true;
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !mainAttackAnim)
         {
             mainAttack = true;
+            mainAttackAnim = true;
         }
 
         // set animations
         animator.SetFloat("speed", Mathf.Abs(rb.velocity.x) * animationSpeedMultipler);
         animator.SetBool("jump", rb.velocity.y > .3f);
         animator.SetBool("fall", rb.velocity.y < -.3f);
+        animator.SetBool("run", Mathf.Abs(rb.velocity.x) > 2f);
+        animator.SetBool("attack", mainAttackAnim);
     }
 
     private void FixedUpdate()
@@ -87,6 +100,11 @@ public class PlayerController : MonoBehaviour
         return new Vector3(-1, 0);
     }
 
+    public void AttackLaunched()
+    {
+        mainAttackAnim = false;
+    }
+
     void MainAttack()
     {
         Vector3 direction = GetDirection();
@@ -95,18 +113,25 @@ public class PlayerController : MonoBehaviour
         if (attackPoint.y != 0) attackPoint *= attackDistanceVertical;
         attackPoint += transform.position;
 
-        hitEffect.transform.position = attackPoint;
-        hitEffect.transform.rotation = Quaternion.Euler(new Vector3(0, 0, direction.x > 0 ? -45 : direction.x < 0 ? 135 : direction.y < 0 ? 225 : 45));
+        animAttacktToRecord = true;
+        animVectorToRecord = attackPoint;
+        animRotToRecord = Quaternion.Euler(new Vector3(0, 0, direction.x > 0 ? -45 : direction.x < 0 ? 135 : direction.y < 0 ? 225 : 45));
+
+        hitEffect.transform.position = animVectorToRecord;
+        hitEffect.transform.rotation = animRotToRecord;
         hitEffect.Play();
 
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPoint, .2f);
+        Instantiate(hitPrefab, animVectorToRecord, Quaternion.Euler(0, 0, 0));
+
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPoint, .5f);
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].gameObject != gameObject)
             {
                 if (colliders[i].TryGetComponent(out SimpleObject obj))
                 {
-                    if (obj.canPogoJump)
+                    // check pogo jump
+                    if (obj.canPogoJump && direction.y < 0)
                     {
                         controller.ForceJump();
                     }

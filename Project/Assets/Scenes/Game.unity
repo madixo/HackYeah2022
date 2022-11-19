@@ -927,6 +927,7 @@ GameObject:
   - component: {fileID: 643467829}
   - component: {fileID: 643467830}
   - component: {fileID: 643467831}
+  - component: {fileID: 643467832}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -943,7 +944,7 @@ Transform:
   m_GameObject: {fileID: 643467828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.62, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1439425198}
@@ -991,7 +992,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.023677466, g: 0, b: 0.3018868, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1015,6 +1016,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recordPlayer: {fileID: 1750840774}
   timeSpanMilliseconds: 2000
+--- !u!95 &643467832
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643467828}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4bc555db06e301546ad4be339a0f8ce5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &841029549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,7 +1486,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 19.199999, y: 10.799999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1505,7 +1526,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 19.199999, y: 10.799999}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 19.199999, y: 10.799999}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1529,9 +1550,10 @@ MonoBehaviour:
   floorCheck: {fileID: 1311325708}
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   hitEffect: {fileID: 1946625459}
   animator: {fileID: 1750840775}
+  hitPrefab: {fileID: 1442673849666740425, guid: a0503bcc64268e14c9dcba7db1fb87e7, type: 3}
   velocityMultipler: 50
   attackDistanceHorizontal: 3
   attackDistanceVertical: 2
@@ -6360,11 +6382,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946625457}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9193888, w: -0.39335006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.05, y: -0.42652452, z: 0.11906471}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1439425198}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 226.326}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
