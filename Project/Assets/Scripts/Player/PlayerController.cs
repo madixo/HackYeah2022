@@ -9,10 +9,14 @@ public class PlayerController : MonoBehaviour
     public Transform floorCheck;
     public LayerMask m_WhatIsGround;
     public ParticleSystem hitEffect;
+    public Animator animator;
 
     public float velocityMultipler;
     public float attackDistanceHorizontal;
     public float attackDistanceVertical;
+    public float animationSpeedMultipler;
+
+    Rigidbody2D rb;
 
     private float horizontalMovement;
     private bool jump;
@@ -22,9 +26,9 @@ public class PlayerController : MonoBehaviour
 
     bool m_Grounded;
 
-    void Start()
+    private void Awake()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -40,6 +44,11 @@ public class PlayerController : MonoBehaviour
         {
             mainAttack = true;
         }
+
+        // set animations
+        animator.SetFloat("speed", Mathf.Abs(rb.velocity.x) * animationSpeedMultipler);
+        animator.SetBool("jump", rb.velocity.y > .3f);
+        animator.SetBool("fall", rb.velocity.y < -.3f);
     }
 
     private void FixedUpdate()
