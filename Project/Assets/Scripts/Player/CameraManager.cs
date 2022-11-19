@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Transform target;
+    public float multipler;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.position = Vector3.Lerp(transform.position, target.position + new Vector3(0, 0, -10), Time.deltaTime * multipler);
     }
 }
