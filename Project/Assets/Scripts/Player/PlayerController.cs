@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public CharacterController2D controller;
     public Transform floorCheck;
     public LayerMask m_WhatIsGround;
+    public ParticleSystem hitEffect;
 
     public float velocityMultipler;
     public float attackDistanceHorizontal;
@@ -78,10 +80,15 @@ public class PlayerController : MonoBehaviour
 
     void MainAttack()
     {
-        Vector3 attackPoint = GetDirection();
+        Vector3 direction = GetDirection();
+        Vector3 attackPoint = direction;
         if (attackPoint.x != 0) attackPoint *= attackDistanceHorizontal;
         if (attackPoint.y != 0) attackPoint *= attackDistanceVertical;
         attackPoint += transform.position;
+
+        hitEffect.transform.position = attackPoint;
+        hitEffect.transform.rotation = Quaternion.Euler(new Vector3(0, 0, direction.x > 0 ? -45 : direction.x < 0 ? 135 : direction.y < 0 ? 225 : 45));
+        hitEffect.Play();
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPoint, .2f);
         for (int i = 0; i < colliders.Length; i++)
