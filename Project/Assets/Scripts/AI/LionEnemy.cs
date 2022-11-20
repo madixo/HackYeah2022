@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DefaultEnemy : MonoBehaviour
+public class LionEnemy : MonoBehaviour
 {
     [SerializeField]
     private Transform probe;

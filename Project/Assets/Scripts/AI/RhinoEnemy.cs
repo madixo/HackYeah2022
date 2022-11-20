@@ -9,9 +9,15 @@ public class RhinoEnemy : MonoBehaviour
     [SerializeField]
     private bool movingRight;
     [SerializeField]
-    private Rigidbody rigidBody;
+    private Rigidbody2D rigidBody;
     [SerializeField]
     private float speed;
+    [SerializeField]
+    private Transform probe;
+    [SerializeField]
+    private float radius;
+    [SerializeField]
+    private LayerMask whatIsGround;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +32,7 @@ public class RhinoEnemy : MonoBehaviour
 
     void FixedUpdate() {
 
-        if(target.transform.position.x - transform.position.x < 0) {
+        if(target.position.x - rigidBody.transform.position.x < 0) {
 
             if(movingRight)
                 Flip();
@@ -39,7 +45,13 @@ public class RhinoEnemy : MonoBehaviour
 
         }
 
-        rigidBody.velocity = new Vector2(movingRight ? speed : -speed, rigidBody.velocity.y);
+        Collider2D collider = Physics2D.OverlapCircle(probe.position, radius, whatIsGround);
+
+        if(collider != null)
+            rigidBody.velocity = new Vector2(movingRight ? speed : -speed, rigidBody.velocity.y);
+        else
+            rigidBody.velocity = Vector2.zero;
+
 
     }
 
