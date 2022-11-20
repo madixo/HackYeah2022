@@ -14,7 +14,7 @@ public class HealthBar : MonoBehaviour
     }
 
     // percent should be in range [0, 1]
-    void SetHealth(float value) {
+    public void SetHealth(float value) {
 
         healthBar.value = value;
 
