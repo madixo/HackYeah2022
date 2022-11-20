@@ -17,18 +17,18 @@ public class LionEnemy : MonoBehaviour
     private Rigidbody2D rigidBody;
     [SerializeField]
     private float speed;
+    public SpriteRenderer spriteRenderer;
     // private bool canFlip = false;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
+        spriteRenderer.color = Color.Lerp(spriteRenderer.color, Color.white, Time.deltaTime * 1);
     }
 
     void Flip() {
@@ -56,5 +56,18 @@ public class LionEnemy : MonoBehaviour
 
         rigidBody.velocity = new Vector2(movingRight ? speed : -speed, rigidBody.velocity.y);
 
+    }
+
+    public void TriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out SimpleObject obj))
+        {
+            if (obj.canHurt) Hurt();
+        }
+    }
+
+    void Hurt()
+    {
+        spriteRenderer.color = Color.red;
     }
 }

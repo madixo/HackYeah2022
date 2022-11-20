@@ -145,6 +145,9 @@ public class PlayerController : MonoBehaviour
 
         HitCollider hit = Instantiate(hitPrefab, animVectorToRecord, animRotToRecord);
         hit.GetComponent<SpriteRenderer>().color = Color.white;
+        SimpleObject obj = hit.GetComponent<SimpleObject>();
+        obj.canHeal = true;
+        obj.canHurt = false;
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPoint, .5f);
         for (int i = 0; i < colliders.Length; i++)
@@ -182,6 +185,9 @@ public class PlayerController : MonoBehaviour
 
         HitCollider hit = Instantiate(hitPrefab, animVectorToRecord, animRotToRecord);
         hit.GetComponent<SpriteRenderer>().color = Color.black;
+        SimpleObject obj = hit.GetComponent<SimpleObject>();
+        obj.canHeal = false;
+        obj.canHurt = true;
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPoint, .5f);
         for (int i = 0; i < colliders.Length; i++)
