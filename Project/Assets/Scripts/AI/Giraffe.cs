@@ -31,14 +31,26 @@ public class Giraffe : MonoBehaviour
             mDown = false;
             mUp = true;
             state++;
-            state %= 4;
+            state %= 2;
             switch (state)
             {
                 case 1:
                     transform.position = new Vector3(-13f, transform.position.y);
                     posTo = transform.position + new Vector3(0, 9, 0);
+                    transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y);
+                    break;
+                case 0:
+                    transform.position = new Vector3(6.7f, transform.position.y);
+                    posTo = transform.position + new Vector3(0, 9, 0);
+                    transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y);
                     break;
             }
+        }
+        if (mUp && posTo.y - transform.position.y < 0.2f)
+        {
+            mUp = false;
+            animator.SetBool("attack", true);
+            animator.SetBool("idle", false);
         }
     }
 

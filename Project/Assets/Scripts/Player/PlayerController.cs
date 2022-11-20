@@ -145,16 +145,19 @@ public class PlayerController : MonoBehaviour
 
         HitCollider hit = Instantiate(hitPrefab, animVectorToRecord, animRotToRecord);
         hit.GetComponent<SpriteRenderer>().color = Color.white;
+        SimpleObject obj = hit.GetComponent<SimpleObject>();
+        obj.canHeal = true;
+        obj.canHurt = false;
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPoint, .5f);
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].gameObject != gameObject)
             {
-                if (colliders[i].TryGetComponent(out SimpleObject obj))
+                if (colliders[i].TryGetComponent(out SimpleObject obj3))
                 {
                     // check pogo jump
-                    if (obj.canPogoJump && direction.y < 0)
+                    if (obj3.canPogoJump && direction.y < 0)
                     {
                         controller.ForceJump();
                     }
@@ -182,16 +185,19 @@ public class PlayerController : MonoBehaviour
 
         HitCollider hit = Instantiate(hitPrefab, animVectorToRecord, animRotToRecord);
         hit.GetComponent<SpriteRenderer>().color = Color.black;
+        SimpleObject obj = hit.GetComponent<SimpleObject>();
+        obj.canHeal = false;
+        obj.canHurt = true;
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPoint, .5f);
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].gameObject != gameObject)
             {
-                if (colliders[i].TryGetComponent(out SimpleObject obj))
+                if (colliders[i].TryGetComponent(out SimpleObject obj2))
                 {
                     // check pogo jump
-                    if (obj.canPogoJump && direction.y < 0)
+                    if (obj2.canPogoJump && direction.y < 0)
                     {
                         controller.ForceJump();
                     }
