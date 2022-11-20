@@ -42,6 +42,7 @@ public class PlayerGhost : MonoBehaviour
             spawnAnim = recordPlayer.animAttacktToRecord,
             spawnAnimPosition = recordPlayer.animVectorToRecord,
             spawnAnimRotation = recordPlayer.animRotToRecord,
+            isBlack = !recordPlayer.animAttackIsWhite,
             action = recordPlayer.animAttacktToRecord,
         });
         recordPlayer.animAttacktToRecord = false;
@@ -72,10 +73,14 @@ public class PlayerGhost : MonoBehaviour
         {
             if (state.spawnAnim)
             {
-                recordPlayer.hitEffect.transform.position = state.spawnAnimPosition;
-                recordPlayer.hitEffect.transform.rotation = state.spawnAnimRotation;
-                recordPlayer.hitEffect.Play();
-                Instantiate(recordPlayer.hitPrefab, state.spawnAnimPosition, Quaternion.Euler(0, 0, 0));
+                //recordPlayer.hitEffect.transform.position = state.spawnAnimPosition;
+                //recordPlayer.hitEffect.transform.rotation = state.spawnAnimRotation;
+                //recordPlayer.hitEffect.Play();
+                HitCollider hit = Instantiate(recordPlayer.hitPrefab, state.spawnAnimPosition, state.spawnAnimRotation);
+                hit.GetComponent<SpriteRenderer>().color = state.isBlack ? Color.black : Color.white;
+                SimpleObject obj = hit.GetComponent<SimpleObject>();
+                obj.canHeal = !state.isBlack;
+                obj.canHurt = state.isBlack;
             }
             state.action = false;
             this.state[0] = state;
@@ -114,6 +119,7 @@ public class PlayerGhost : MonoBehaviour
         public Vector3 spawnAnimPosition;
         public Quaternion spawnAnimRotation;
         public float animSpeed;
+        public bool isBlack;
         public bool action;
     }
 

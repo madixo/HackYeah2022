@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9746fec163585ac4c8c1f9e9e07fbaab
+=======
+guid: 89ad2d6cb342e9a409aca7dbc78956e1
+>>>>>>> 4e14a145fdb0e1e5300580673a0ac24f863b265a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +46,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> 4e14a145fdb0e1e5300580673a0ac24f863b265a
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +111,872 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites: []
+=======
+    sprites:
+    - serializedVersion: 2
+      name: white_slash_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 5400
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fad34e8217f7243b12350f36d79d16
+      internalID: -654460830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 5400
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159cfb47ff9445042a442f9dd0e3d5b0
+      internalID: -1144959883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_2
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 5400
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6faf3f3754eb794da034a556fe5b8b2
+      internalID: -1803249638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_3
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 5400
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a2027a9c5c28d4abf5bf7f1f45b141
+      internalID: -481882141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_4
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5400
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37ef837434bf7c478f2d4072537d5f1
+      internalID: 295034625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_5
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 5400
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d39042bde9e179499b2acd61cb6e049
+      internalID: 2001312732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d5f244f5b3807478a6839bc48d50ac
+      internalID: -1457551081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_7
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 4320
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1d19b2acfcee746bb419d069705bfd
+      internalID: -230469583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_8
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4320
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4800223c23f654eb25296b5deaf0e2
+      internalID: -46805474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_9
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 4320
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741a9d253ca9654439e134a3c93b6734
+      internalID: -1592650381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_10
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 4320
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ffcf285dd49a24dad575b808c6d270
+      internalID: 1694169154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_11
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 4320
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641836e379bfa8a4ca9a40623429edd9
+      internalID: -28842602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_12
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 4320
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9ac7839bec6e34d9ae27010cbd9fb8
+      internalID: 285157244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5addf50e0df0d4b458b51232dec345e1
+      internalID: -2111692811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_14
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3240
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedb9a54e5f4f2444956608e1dd25b58
+      internalID: -695587016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_15
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3240
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29bd20651cb0fd49b4513344281f13f
+      internalID: 1885663723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_16
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3240
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a70610aa941bd45856e514c244f715
+      internalID: -686816549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_17
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3240
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2260c2fe4d2ce074ca65109a979c86ca
+      internalID: 64105611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_18
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3240
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed37cf5dcc357c446b6d0a10483c781d
+      internalID: 85997728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_19
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 3240
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7b96e97fbde3f469caed47f1df7e4d
+      internalID: 1729142005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b68c65ab285a05438cbfba5f611a72e
+      internalID: -457534222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2160
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979a726578b97b249bda4327c0ceb818
+      internalID: -1189169493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2160
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee02ea39600b4140b6ade5cc8777e32
+      internalID: -1525365306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_23
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2160
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0895dfeb91c7f94e85a6236034df0b4
+      internalID: -1474952270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_24
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2160
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889f6435351d5fa4bae8c7b949bf6506
+      internalID: 1285780688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_25
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2160
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9157c55ace572a64ba7ca39364eb4be5
+      internalID: 243431520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_26
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2160
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ee45e807a652a4984aabe0132358ad
+      internalID: -364783610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6976f05273cd8b4d8e67b23433f67b2
+      internalID: -1379714224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_28
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1080
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44babe04a456a441bd77d31962ad16e
+      internalID: 1278782255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_29
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1080
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd3157e0cb9fb54c97dbc90113d073e
+      internalID: -2071985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_30
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1080
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6adf89998335a94d95d187a6f0e1b74
+      internalID: 829395041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_31
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1080
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df2f211a5a865346a499d929e676914
+      internalID: -1867048208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_32
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1080
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d8737fdf300934da97dae6d3fc3b4b
+      internalID: -1654873109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_33
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1080
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5218b32f82380499efe5bc72c68b58
+      internalID: -1942086917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5c3f9ef250365499046d1dc46305fc
+      internalID: -1872027769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_35
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e1e2abd9799be4bb3db7e1f604e1af
+      internalID: -100727749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_36
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f587b73177e67d14cb270dc148779c7d
+      internalID: -882010932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_37
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc7f4086b1cbbd4ebfb58691c6b1312
+      internalID: -35322257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_38
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d61dab41773744eb5485e3ee432b48
+      internalID: 1009188157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_39
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7f169815f4a43499a20165f68a00f4
+      internalID: 974351554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_slash_40
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 768
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c801b79b449c45249b83fd3738713a36
+      internalID: 1068510414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+>>>>>>> 4e14a145fdb0e1e5300580673a0ac24f863b265a
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +987,52 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
     nameFileIdTable: {}
+=======
+    nameFileIdTable:
+      white_slash_0: -654460830
+      white_slash_8: -46805474
+      white_slash_6: -1457551081
+      white_slash_28: 1278782255
+      white_slash_17: 64105611
+      white_slash_33: -1942086917
+      white_slash_26: -364783610
+      white_slash_35: -100727749
+      white_slash_21: -1189169493
+      white_slash_27: -1379714224
+      white_slash_31: -1867048208
+      white_slash_25: 243431520
+      white_slash_30: 829395041
+      white_slash_16: -686816549
+      white_slash_32: -1654873109
+      white_slash_13: -2111692811
+      white_slash_10: 1694169154
+      white_slash_37: -35322257
+      white_slash_12: 285157244
+      white_slash_24: 1285780688
+      white_slash_39: 974351554
+      white_slash_1: -1144959883
+      white_slash_29: -2071985
+      white_slash_3: -481882141
+      white_slash_23: -1474952270
+      white_slash_7: -230469583
+      white_slash_15: 1885663723
+      white_slash_38: 1009188157
+      white_slash_22: -1525365306
+      white_slash_5: 2001312732
+      white_slash_40: 1068510414
+      white_slash_9: -1592650381
+      white_slash_11: -28842602
+      white_slash_14: -695587016
+      white_slash_20: -457534222
+      white_slash_18: 85997728
+      white_slash_34: -1872027769
+      white_slash_2: -1803249638
+      white_slash_36: -882010932
+      white_slash_4: 295034625
+      white_slash_19: 1729142005
+>>>>>>> 4e14a145fdb0e1e5300580673a0ac24f863b265a
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
